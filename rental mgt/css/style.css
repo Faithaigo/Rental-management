@@ -93,14 +93,22 @@ body{
   width:85%;
 }
 .loginform{
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .tenantform{
   margin-top: 10%;
+  margin-bottom: 5%;
+
 }
-.rowform{
+#payment{
+  margin-top: 10%;
+}
+.ml-5{
+  margin-left: 10%;
+}
+/* .rowform{
   margin-left: 18%;
-}
+} */
 
 /*============ BOOTSTRAP BREAK POINTS:
 
