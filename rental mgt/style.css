@@ -1,44 +1,49 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
-body {
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+
+body{
   overflow-x: hidden;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #505962;
 }
 
+
 /*--- Navigation --*/
-.navbar {
+.navbar{
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-  background: rgba(0, 0, 0, 0.6) !important;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0,0,0,0.6)!important;
 }
-.navbar {
+.navbar{
   color: black;
 }
-.cwezi {
+.cwezi{
   color: rgb(243, 117, 72);
   text-decoration: none;
 }
 .navbar-nav li {
-  padding-right: 0.7rem;
+  padding-right: .7rem;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  padding-top: 0.8rem;
+  padding-top: .8rem;
 }
 .navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover{
   color: rgb(238, 122, 80);
 }
 
 /*---Landing Page---*/
 
-.home-inner {
-  background-image: url(../img/img2.jpg);
+.home-inner{
+  background-image: url(img/img2.jpg)
 }
-.caption {
+.caption{
   width: 100%;
   max-width: 100%;
   position: absolute;
@@ -46,59 +51,49 @@ body {
   z-index: 1;
   color: white;
   text-transform: uppercase;
+
 }
 .caption h1 {
   font-size: 3.8rem;
   font-weight: 700;
-  letter-spacing: 0.3rem;
-  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
   padding-bottom: 1rem;
 }
-.caption h3 {
+.caption h3{
   font-size: 2rem;
-  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  text-shadow: .1rem .1rem .5rem black;
   padding-bottom: 1.6rem;
+
 }
-.btn-lg {
+.btn-lg{
   border-width: medium;
   border-radius: 0;
-  padding: 0.6rem 1.3rem;
+  padding: .6rem 1.3rem;
   font-size: 1.1rem;
 }
-.card {
-  box-shadow: 0.1rem 0.1rem 0.8rem black;
+.card{
+  box-shadow: .1rem .1rem .8rem black;
+
 }
 
-/* .login-form { */
-/* padding: 15px; */
-/* border: 1px solid rgb(233, 230, 230);
-  box-shadow: 0.1rem 0.1rem 0.8rem black; */
-/* border-radius: 8px; */
-/* margin: auto; */
-/* margin: 20px; */
-/* margin-top: 10px; */
-/* background: rgba(243, 243, 242, 0.356);
-} */
+.login-form{
+  padding: 15px;
+  border: 1px solid rgb(233, 230, 230);
+  box-shadow: .1rem .1rem .8rem black;
+  /* border-radius: 8px; */
+  /* margin: auto; */
+  /* margin: 20px; */
+  margin-top: 20px;
+  background: rgb(243, 243, 242)
+  
 
-.form-control {
-  width: 85%;
 }
-.loginform {
-  margin-top: 10%;
+.form-control{
+  width:85%;
 }
-.tenantform {
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-#payment {
-  margin-top: 10%;
-}
-.ml-5 {
-  margin-left: 10%;
-}
-
-/* .rowform{
-  margin-left: 18%;
+/* #adminlogin, #tenantlogin{
+  display: none;
 } */
 
 /*============ BOOTSTRAP BREAK POINTS:

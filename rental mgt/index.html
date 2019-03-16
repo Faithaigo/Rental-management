@@ -8,6 +8,43 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fixed.css">
 </head>
+<style>
+	.fixed{
+		background-image: url(img/img14);
+		z-index: -1;
+		
+	}
+	.tenantregistration{
+		margin-left: 15%
+	}
+	.tenantregistration , .loginform {
+		background-color: rgba(49, 48, 46, 0.356);
+		border: none;
+		color: white;
+		
+	}
+	.social a {
+	font-size: 2rem;
+	padding: 2rem;
+	}
+	.fa-facebook {
+	color: rgba(13, 53, 128, 0.979);
+	}
+	.fa-twitter {
+	color: rgb(62, 62, 247);
+	}
+	.fa-youtube {
+	color: rgb(219, 7, 7);
+	}
+	.fa-google-plus-g {
+	color: rgb(241, 47, 47);
+	}
+	.footer{
+		background-color: rgb(46, 45, 45);
+		color: rgb(248, 247, 247)
+		
+	}
+</style>
 
 <body data-spy = "scroll" data-target="#navbarResponsive">
 
@@ -73,10 +110,16 @@
 	<!--- Start About Us Section -->
 	<div id="about" class="offset">
 		<div class="col-12 narrow text-center">
-			<h1>About Cwezi Apartments</h1>
-			<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Cumque amet eligendi quo nam consequatur sit, dolorem minima. Odio maxime debitis optio sequi. 
-				Facilis deleniti magnam voluptatem architecto reprehenderit libero dolor.</p>
+			<h1 class="mt-5">About Cwezi Apartments</h1>
+			<p class="lead">The name “Cwezi” comes from the ‘Abacawezi” a mythical, magical tribe that was once
+				 the ruling dynasty of the great Kingdom of Bunyoro Kitara. Our logo, featuring two African style huts, 
+				symbolizes the spirit of warm hospitality that we extend to all our guests and residents.
+				We strive to deliver the right mix of luxury, comfort, functionality and value for money at all of our three locations.
+				 Our location is carefully chosen to ensure easy access to business, shopping, 
+				leisure and educational facilities while providing the quiet and homely environment of good residential neighborhoods.
+				Our two and 2 bedroom units is just the thing to cater to the needs of a typical expatriate family.
+				We are located in Naguru and continue to develop new locations and to expand our product mix.
+				We look forward to receiving you!</p>
 				<!-- <a class="btn btn-secondary btn-md" href="#">Book a Room</a> -->
 		</div>
 		
@@ -90,7 +133,7 @@
 		<!--- Start Jumbotron -->
 		<div class="jumbotron">
 			<div class="narrow">
-				<div class="col-12 text-center">
+				<div class="text-center">
 					<h4 class="heading display-4">Gallery</h4>
 					<div class="heading-underline"></div>
 				</div>
@@ -181,10 +224,10 @@
 	
 				</div><!---End row-->
 				<div class="col-12 text-center">
-					<a class="btn btn-secondary btn-md" href="#login">Book a Room</a>
+					<a class="btn btn-info btn-md" href="#login">Book a Room</a>
 				</div>
 
-			</div><!---End Narrow-->
+			</div><!--End Narrow-->
 		</div>
 		<!--- End Jumbotron -->
 		
@@ -195,59 +238,17 @@
 
 	<!--- Start Login Section -->
 	<div id="login" class="offset">
-		<div class=" col-12 narrow">
+		<!-- <div class=" col-12 narrow"> -->
 			<div class="fixed-background">
 					<div class="row dark padding">
-						<div class="col-12 text-center">
-								<!-- <h4 class="heading display-4"> Tenant Login </h4> -->
-								<div class="heading-underline"></div>
-						</div>
-						<div class="col-md-6 offset-md-3">
 
-							<div class="login-form" id="tenantlogin">
-									<h5 class="text-center mt-2"> Tenant Login </h5>
-									<hr>
-	
-									<form class="offset-md-2">
-										<table>
-											<tr>
-												<div class="form-group">
-													<td><label for="staticEmail" class=" col-form-label">Email</label></td>
-													<td><input type="email" class="form-control" id="staticEmail"></td>
-												</div>
-											</tr>
-											<tr>
-												<div class="form-group">
-													<td><label for="password" class=" col-form-label">Password</label></td>
-													
-													<td><input type="password" class="form-control" id="password"></td>
-														
-												</div>
-				
-											</tr>
-											<tr>
-												<div class="form-group">
-													<td><input type="submit" name="login" id="login" value="Login" class="btn btn-primary offset-md-8  shadow"  style="width:70%; border: radius 10px;"></td>
-													<td><p class="offset-md-3">New User? <a href="#register" id="register-btn">Register</a></p></td>
-												</div>
-												<!-- <div class="form-group"> -->
-													
-												<!-- </div> -->
-											</tr>
-										</table>
-									</form><!---End Login form-->
-							</div>
+
 						</div>
-					<div class="fixed-wrap">
-						<div class="fixed">
-							
-		
-						</div>
-					</div>
-			
+
+
 				</div><!--- End Fixed Background -->
 
-		</div><!--End narrow-->
+		<!-- </div>End narrow -->
 
 		
 	</div>
@@ -256,61 +257,99 @@
 
 
 	<!--- Start Register Section -->
-	<div id="register" class="offset jumbotron">
-		<div class="col-md-8 narrow offset-md-2">
-			<div class="login-form" id="tenantregister">
-					<h5 class="text-center mt-2"> Tenant Registration </h5>
-					<hr>
+	<div id="register" class="offset">
+	<div class="fixed-background">
+		<div class="row">
+			<div class="col-md-4">
+					<div class="loginform" id="tenantlogin">
+							<h5 class="text-center mt-2"> Tenant Login </h5>
+							<hr>
 
-					<form class="offset-md-2">
-						<table>
-							<tr>
-								<div class="form-group">
-									<td><label for="staticname" class=" col-form-label">Name</label></td>
-									<td><input type="text" class="form-control" id="staticname"></td>
-								</div>
-							</tr>
-							<tr>
-								<div class="form-group">
-									<td><label for="email" class=" col-form-label">Email</label></td>
-									
-									<td><input type="email" class="form-control" id="email"></td>
-										
-								</div>
+							<form class="offset-md-1">
 
-							</tr>
-							<tr>
-								<div class="form-group">
-									<td><label for="password" class=" col-form-label">Password</label></td>
-									
-									<td><input type="password" class="form-control" id="password"></td>
+										<div class="form-group row">
+											<label for="staticEmail" class="col-sm-3 col-form-label">Email</label>
+											<div class="col-sm-8">
+												<input type="email" class="form-control" id="staticEmail">
+											</div>
+											
+										</div>
+
+										<div class="form-group row">
+											<label for="password" class="col-sm-3 col-form-label">Password</label>
+											<div class="col-sm-8">
+												<input type="password" class="form-control" id="password">
+											</div>
 										
-								</div>
-	
-							</tr>
-							<tr>
-								<div class="form-group">
-									<td><label for="cpassword" class=" col-form-label">Confirm Password</label></td>
-									
-									<td><input type="password" class="form-control" id="cpassword"></td>
-										
-								</div>
+												
+										</div>
 		
-							</tr>
-							<tr>
-								<div class="form-group">
-									<td><input type="submit" name="register" id="login" value="Register" class="btn btn-primary offset-md-8  shadow"  style="width:70%; border: radius 10px;"></td>
-									<td><p class="offset-md-4">Member <a href="#login" id="register-btn">Login</a></p></td>
-								</div>
-								<!-- <div class="form-group"> -->
-									
-								<!-- </div> -->
-							</tr>
-						</table>
-					</form><!---End Login form-->
-			</div>
 
-		</div>
+										<div class="form-group row">
+											<input type="submit" name="login" id="login" value="Login" class="btn btn-info offset-md-5  shadow mb-3"  style="width:20%; border-radius:10px;">
+											<p class="offset-md-0">New User? <a href="#register" id="register-btn">Register</a></p>
+										</div>
+										<!-- <div class="form-group"> -->
+											
+										<!-- </div> -->
+
+							</form><!---End Login form-->
+					</div>
+			</div>
+			<div class="col-md-6">
+				<div class="tenantregistration" id="tenantregister">
+						<h5 class="text-center mt-2"> Tenant Registration </h5>
+						<hr>
+
+						<form class="offset-md-1">
+
+									<div class="form-group row">
+										<label for="staticname" class="col-sm-3 col-form-label">Name</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="staticname">
+										</div>
+
+									</div>
+								
+								
+									<div class="form-group row">
+										<label for="email" class=" col-sm-3 col-form-label">Email</label>
+										<div class="col-sm-8">
+											<input type="email" class="form-control" id="email">
+										</div>	
+									</div>
+
+									<div class="form-group row">
+										<label for="password" class="col-sm-3 col-form-label">Password</label>
+										<div class="col-sm-8">
+											<input type="password" class="form-control" id="password">
+										</div>		
+									</div>
+									<div class="form-group row">
+										<label for="cpassword" class="col-sm-3 col-form-label">Confirm Password</label>
+										<div class="col-sm-8">
+											<input type="password" class="form-control" id="cpassword">
+										</div>	
+									</div>
+		
+									<div class="form-group row ">
+										<input type="submit" name="register" id="login" value="Register" class="btn btn-info offset-md-6  shadow mb-3" 
+										style="width:20%; border-radius:10px;">
+										<p class="offset-md-0" >Member <a href="#login" id="register-btn">Login</a></p>
+									</div>
+									<!-- <div class="form-group"> -->
+										
+									<!-- </div> -->
+
+						</form><!---End Login form-->
+				</div>
+
+			</div>
+			<div class="fixed-wrap">
+					<div class="fixed">
+					</div>
+			</div>
+	</div>
 		
 	</div>
 		
@@ -319,13 +358,25 @@
 
 	<!--- Start Contact Section -->
 	<div id="contact" class="offset ">
-		<div class="col-12 narrow padding " >
+			<div class="col-12 social padding text-center">
+					<a href="https://www.facebook.com/Cwezi-Properties-Ltd-558043950930877/" target="__blank"><i class="fab fa-facebook"></i></a>
+					<a href="#t"><i class="fab fa-twitter"></i></a>
+					<a href="#y"><i class="fab fa-youtube"></i></a>
+					<a href="#g"><i class="fab fa-google-plus-g"></i></a>
+
+			</div>
+	</div>	
+	<!--- End Contact Section -->
+
+		<div class="col-12 narrow footer" >
 			<div class="row text-center ">
 				<div class="col-md-6">
-					<h6>Cwezi Apartments</h6>
+					<h6>Bookings and Reservations</h6>
 					<hr class="light">
-					<p>Contact:999u6943000</p>
-					<p>Location:Naguru</p>
+					<p>999u6943000</p>
+					<p>cweziapartments@gmail.com</p>
+					<p> Plot 3 </p>
+					<p>Gasper Oda Street</p>
 				</div>
 				<div class="col-md-6">
 					<hr class="light">
@@ -333,22 +384,18 @@
 					<hr class="light">
 					<p>Rental Rooms</p>
 					<p>Furnished place</p>
-
 				</div>
-
 			</div>
-			<div class="col-12 social padding text-center">
-				<a href="#"><i class="fab fa-facebook"></i></a>
-				<a href="#"><i class="fab fa-twitter"></i></a>
-				<a href="#"><i class="fab fa-instagram"></i></a>
+			<div class="col-12 text-center">
 				<hr class="light">
-				<p>CweziApartments&copy;2019</p>
+				<p>&copy;cweziapartments</p>
 			</div>
-	    </div>
+			
+
+	  </div>
 		
-	</div>
-		
-	<!--- End Contact Section -->
+
+
 
 	<!--- Script Source Files -->
 	<script src="js/jquery-3.3.1.min.js"></script>
